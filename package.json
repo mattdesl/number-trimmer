@@ -1,6 +1,6 @@
 {
   "name": "number-trimmer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "trims all numbers in an object with toFixed",
   "main": "index.js",
   "license": "MIT",
