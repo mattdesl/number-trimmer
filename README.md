@@ -8,7 +8,12 @@ Simple way of trimming all numbers types in an object to the given number of dec
 
 ```js
 //your data with lots of decimal places
-var bigDataSet = { ... };
+var bigDataSet = {
+	foo: 'foo',  // non-number types are ignored
+	bar: 23.142145124,
+	foobar: 12.14123123,
+	//... etc
+};
 
 //trimmed to N places
 var trimmed = require('number-trimmer')(bigDataSet, 2);
